@@ -90,18 +90,16 @@ body {
 }
 
 .card h3 {
+  font-size: 26px; /* Increased text size for car name */
   margin: 10px 0;
 }
 
 .card p {
-  font-size: 28px; /* Larger font size */
+  font-size: 24px; /* Default font size for the car value */
   font-weight: bold;
   margin: 10px 0;
-  color: #ffcc00; /* Bright yellow for better contrast */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for better visibility */
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
-  padding: 5px;
-  border-radius: 5px;
+  color: #f0f0f0; /* Lighter color for better contrast */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
 }
 
 .card button {
