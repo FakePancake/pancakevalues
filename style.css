@@ -1,15 +1,10 @@
 /* General Styling */
 body {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1c1c2b;
   color: white;
-}
-
-/* Layout */
-.container {
-  display: flex;
 }
 
 /* Sidebar */
@@ -18,10 +13,10 @@ body {
   background-color: #2b2b3d;
   padding: 20px;
   height: 100vh;
-  font-family: 'Poppins', sans-serif; /* Changed to Poppins */
 }
 
 .sidebar h2 {
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -44,6 +39,7 @@ body {
   text-align: left;
   cursor: pointer;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar button.active,
@@ -91,16 +87,14 @@ body {
 }
 
 .card h3 {
-  font-size: 26px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
   margin: 10px 0;
 }
 
 .card p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
-  color: #f0f0f0;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .card button {
@@ -114,4 +108,9 @@ body {
 
 .card button:hover {
   background-color: #616184;
+}
+
+/* Layout */
+.container {
+  display: flex;
 }
