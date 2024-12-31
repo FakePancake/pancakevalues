@@ -8,58 +8,46 @@
 </head>
 <body>
   <div class="container">
+    <!-- Sidebar -->
     <aside class="sidebar">
       <h2>Categories</h2>
       <ul>
-        <li><button class="active">All</button></li>
-        <li><button>Vehicles</button></li>
+        <li><button class="active">Vehicles</button></li>
         <li><button>Spoilers</button></li>
         <li><button>Rims</button></li>
         <li><button>Textures</button></li>
         <li><button>Colors</button></li>
         <li><button>Hypers</button></li>
       </ul>
-      <h2>Config</h2>
-      <ul>
-        <li><label for="sort">Sort:</label>
-          <select id="sort">
-            <option value="desc">Greatest to Least</option>
-            <option value="asc">Least to Greatest</option>
-          </select>
-        </li>
-        <li>
-          <label for="currency">Currency:</label>
-          <select id="currency">
-            <option value="cash">Cash Values</option>
-            <option value="tokens">Tokens</option>
-          </select>
-        </li>
-      </ul>
     </aside>
+    <!-- Main Content -->
     <main class="main-content">
       <div class="search-bar">
-        <input type="text" id="search" placeholder="Search...">
+        <input type="text" id="search" placeholder="Search for vehicles...">
       </div>
       <div class="cards">
+        <!-- Card 1 -->
         <div class="card">
           <img src="https://via.placeholder.com/150" alt="Torpedo">
           <h3>Torpedo</h3>
           <p>35,000,000</p>
           <button>View More</button>
         </div>
+        <!-- Card 2 -->
         <div class="card">
           <img src="https://via.placeholder.com/150" alt="Arachnid">
           <h3>Arachnid</h3>
           <p>28,500,000</p>
           <button>View More</button>
         </div>
+        <!-- Card 3 -->
         <div class="card">
           <img src="https://via.placeholder.com/150" alt="Javelin">
           <h3>Javelin</h3>
           <p>27,500,000</p>
           <button>View More</button>
         </div>
-        <!-- Add more cards as needed -->
+        <!-- Additional cards -->
       </div>
     </main>
   </div>
