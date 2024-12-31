@@ -1,10 +1,10 @@
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Bebas Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text for better contrast */
+  background-color: #1c1c2b;
+  color: white;
 }
 
 /* Layout */
@@ -15,7 +15,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #1e1e1e; /* Dark sidebar */
+  background-color: #2b2b3d;
   padding: 20px;
   height: 100vh;
 }
@@ -38,8 +38,8 @@ body {
   width: 100%;
   padding: 10px;
   border: none;
-  background-color: #2c2c2c; /* Button background */
-  color: #e0e0e0; /* Button text */
+  background-color: #39394e;
+  color: white;
   text-align: left;
   cursor: pointer;
   border-radius: 5px;
@@ -47,7 +47,7 @@ body {
 
 .sidebar button.active,
 .sidebar button:hover {
-  background-color: #424242; /* Button hover and active state */
+  background-color: #4c4c66;
 }
 
 /* Main Content */
@@ -65,8 +65,8 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #1e1e1e; /* Input background */
-  color: #e0e0e0; /* Input text */
+  background-color: #2b2b3d;
+  color: white;
 }
 
 /* Cards */
@@ -77,11 +77,10 @@ body {
 }
 
 .card {
-  background-color: #1e1e1e; /* Card background */
+  background-color: #2b2b3d;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  color: #e0e0e0; /* Card text */
 }
 
 .card img {
@@ -97,12 +96,12 @@ body {
 .card button {
   padding: 10px;
   border: none;
-  background-color: #2c2c2c; /* Button background */
-  color: #e0e0e0; /* Button text */
+  background-color: #4c4c66;
+  color: white;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .card button:hover {
-  background-color: #424242; /* Button hover */
+  background-color: #616184;
 }
