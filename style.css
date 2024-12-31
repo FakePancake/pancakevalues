@@ -87,12 +87,13 @@ body {
 .card img {
   max-width: 100%;
   border-radius: 10px;
-  margin-top: 10px; /* Ensuring image is below text */
+  margin-top: 10px; /* Ensure image is below the text */
 }
 
 .card h3 {
   font-size: 26px;
   margin: 10px 0;
+  color: #fff; /* Ensure car name is visible */
 }
 
 .card p {
