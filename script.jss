@@ -11,3 +11,11 @@ document.getElementById('search-bar').addEventListener('keyup', function() {
         }
     });
 });
+
+document.getElementById('sort').addEventListener('change', function() {
+    // Add sorting functionality if needed
+});
+
+document.getElementById('currency').addEventListener('change', function() {
+    // Add currency change functionality if needed
+});
