@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-  font-family: 'Bebas Neue', Arial, sans-serif; /* Bebas Neue for main content */
+  font-family: 'Bebas Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1c1c2b;
@@ -18,7 +18,7 @@ body {
   background-color: #2b2b3d;
   padding: 20px;
   height: 100vh;
-  font-family: 'Poppins', sans-serif; /* Poppins for sidebar */
+  font-family: 'Poppins', sans-serif; /* Changed to Poppins */
 }
 
 .sidebar h2 {
@@ -87,13 +87,12 @@ body {
 .card img {
   max-width: 100%;
   border-radius: 10px;
-  margin-top: 10px; /* Ensure image is below the text */
+  margin-bottom: 10px;
 }
 
 .card h3 {
   font-size: 26px;
   margin: 10px 0;
-  color: #fff; /* Ensure car name is visible */
 }
 
 .card p {
