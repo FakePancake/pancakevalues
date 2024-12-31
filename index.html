@@ -3,57 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Values</title>
+    <title>Inventory System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Trading Values</h1>
-        <input type="text" id="search-bar" placeholder="Search...">
-    </header>
-    <main>
-        <section id="categories">
-            <h2>Categories</h2>
-            <ul>
-                <li>Vehicles</li>
-                <li>Spoilers</li>
-                <li>Rims</li>
-                <li>Textures</li>
-                <li>Colors</li>
-                <li>Hypers</li>
-            </ul>
-        </section>
-        <section id="config">
-            <h2>Config</h2>
-            <label for="sort">Sort:</label>
-            <select id="sort">
-                <option value="greatest">Greatest to Least</option>
-                <option value="least">Least to Greatest</option>
-            </select>
-            <label for="currency">Currency:</label>
-            <select id="currency">
-                <option value="cash">Cash Values</option>
-            </select>
-        </section>
-        <section id="items">
-            <h2>Items</h2>
-            <div class="item-card" data-name="Torpedo">
-                <img src="placeholder.png" alt="Torpedo" width="150" height="150">
-                <h3>Torpedo</h3>
-                <p>Value: 35,000,000</p>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li class="selected">Vehicles</li>
+                    <li>Spoilers</li>
+                    <li>Rims</li>
+                    <li>Textures</li>
+                    <li>Colors</li>
+                    <li>Hypers</li>
+                </ul>
             </div>
-            <div class="item-card" data-name="Arachnid">
-                <img src="placeholder.png" alt="Arachnid" width="150" height="150">
-                <h3>Arachnid</h3>
-                <p>Value: 28,500,000</p>
+            <div class="config">
+                <h3>Config</h3>
+                <div class="sort">Sort: Greatest to Least</div>
+                <div class="currency">Currency: Cash Values</div>
             </div>
-            <div class="item-card" data-name="Javelin">
-                <img src="placeholder.png" alt="Javelin" width="150" height="150">
-                <h3>Javelin</h3>
-                <p>Value: 27,500,000</p>
+        </aside>
+        <main class="content">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="items">
+                <div class="item">
+                    <img src="placeholder.png" alt="Torpedo" class="item-image">
+                    <div class="item-info">
+                        <h4>Torpedo</h4>
+                        <p>35,000,000</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="placeholder.png" alt="Arachnid" class="item-image">
+                    <div class="item-info">
+                        <h4>Arachnid</h4>
+                        <p>28,500,000</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="placeholder.png" alt="Javelin" class="item-image">
+                    <div class="item-info">
+                        <h4>Javelin</h4>
+                        <p>27,500,000</p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+        </main>
+    </div>
 </body>
 </html>
