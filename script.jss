@@ -1,21 +1,28 @@
-document.getElementById('search-bar').addEventListener('keyup', function() {
-    let searchQuery = this.value.toLowerCase();
-    let items = document.querySelectorAll('.item-card');
-
-    items.forEach(item => {
-        let itemName = item.getAttribute('data-name').toLowerCase();
-        if (itemName.includes(searchQuery)) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
+document.getElementById('search').addEventListener('input', function () {
+  const query = this.value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
+  
+  cards.forEach(card => {
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    if (title.includes(query)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
 });
 
-document.getElementById('sort').addEventListener('change', function() {
-    // Add sorting functionality if needed
-});
-
-document.getElementById('currency').addEventListener('change', function() {
-    // Add currency change functionality if needed
+// Add sorting functionality (optional)
+document.getElementById('sort').addEventListener('change', function () {
+  const order = this.value;
+  const cards = Array.from(document.querySelectorAll('.card'));
+  const parent = document.querySelector('.cards');
+  
+  cards.sort((a, b) => {
+    const priceA = parseInt(a.querySelector('p').textContent.replace(/,/g, ''));
+    const priceB = parseInt(b.querySelector('p').textContent.replace(/,/g, ''));
+    return order === 'asc' ? priceA - priceB : priceB - priceA;
+  });
+  
+  cards.forEach(card => parent.appendChild(card));
 });
