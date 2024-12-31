@@ -1,46 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+document.getElementById('search-bar').addEventListener('keyup', function() {
+    let searchQuery = this.value.toLowerCase();
+    let items = document.querySelectorAll('.item-card');
 
-header {
-    width: 100%;
-    background-color: #4CAF50;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
+    items.forEach(item => {
+        let itemName = item.getAttribute('data-name').toLowerCase();
+        if (itemName.includes(searchQuery)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
 
-#search-bar {
-    margin-top: 10px;
-    padding: 5px;
-    width: 80%;
-}
+document.getElementById('sort').addEventListener('change', function() {
+    // Add sorting functionality if needed
+});
 
-main {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-}
-
-#categories, #items {
-    flex: 1;
-    padding: 10px;
-}
-
-.item-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.item-card h3 {
-    margin: 0;
-}
+document.getElementById('currency').addEventListener('change', function() {
+    // Add currency change functionality if needed
+});
