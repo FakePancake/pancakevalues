@@ -26,3 +26,30 @@ vehiclesTab.addEventListener('click', (event) => {
 spoilersTab.addEventListener('click', (event) => {
   switchTab(event, spoilersTab, spoilersContent, vehiclesContent);
 });
+
+// Implement the search functionality
+const searchInput = document.getElementById('search');
+
+// Function to filter cards based on the search input
+function filterCards() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  // Select all cards inside the active tab
+  const activeTabContent = document.querySelector('.cards.active');
+  const cards = activeTabContent.getElementsByClassName('card');
+
+  // Loop through the cards and hide those that don't match the search term
+  Array.from(cards).forEach(card => {
+    const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+    const cardDescription = card.querySelector('p').textContent.toLowerCase();
+
+    if (cardTitle.includes(searchTerm) || cardDescription.includes(searchTerm)) {
+      card.style.display = 'block'; // Show the card
+    } else {
+      card.style.display = 'none'; // Hide the card
+    }
+  });
+}
+
+// Add event listener for the search input
+searchInput.addEventListener('input', filterCards);
