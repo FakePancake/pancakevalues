@@ -72,7 +72,11 @@ body {
 
 /* Cards */
 .cards {
-  display: grid;
+  display: none; /* Hide all cards by default */
+}
+
+.cards.active {
+  display: grid; /* Show only active cards */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
