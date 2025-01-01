@@ -18,7 +18,7 @@ body {
   background-color: #2b2b3d;
   padding: 20px;
   height: 100vh;
-  font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar h2 {
@@ -72,11 +72,7 @@ body {
 
 /* Cards */
 .cards {
-  display: none; /* Hide all cards by default */
-}
-
-.cards.active {
-  display: grid; /* Show only active cards */
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
@@ -91,7 +87,7 @@ body {
 .card img {
   max-width: 100%;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .card h3 {
@@ -100,9 +96,8 @@ body {
 }
 
 .card p {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0;
+  font-size: 20px;
+  margin: 5px 0;
   color: #f0f0f0;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
