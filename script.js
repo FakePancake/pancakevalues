@@ -1,28 +1,17 @@
-document.getElementById('search').addEventListener('input', function () {
-  const query = this.value.toLowerCase();
-  const cards = document.querySelectorAll('.card');
-  
-  cards.forEach(card => {
-    const title = card.querySelector('h3').textContent.toLowerCase();
-    if (title.includes(query)) {
-      card.style.display = '';
-    } else {
-      card.style.display = 'none';
-    }
-  });
-});
+// JavaScript for toggling tabs
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll("button");
+  const cardsContainers = document.querySelectorAll(".cards");
 
-// Add sorting functionality (optional)
-document.getElementById('sort').addEventListener('change', function () {
-  const order = this.value;
-  const cards = Array.from(document.querySelectorAll('.card'));
-  const parent = document.querySelector('.cards');
-  
-  cards.sort((a, b) => {
-    const priceA = parseInt(a.querySelector('p').textContent.replace(/,/g, ''));
-    const priceB = parseInt(b.querySelector('p').textContent.replace(/,/g, ''));
-    return order === 'asc' ? priceA - priceB : priceB - priceA;
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      // Remove active class from all tabs and containers
+      tabs.forEach((btn) => btn.classList.remove("active"));
+      cardsContainers.forEach((container) => container.classList.remove("active"));
+
+      // Add active class to clicked tab and corresponding container
+      tab.classList.add("active");
+      cardsContainers[index].classList.add("active");
+    });
   });
-  
-  cards.forEach(card => parent.appendChild(card));
 });
