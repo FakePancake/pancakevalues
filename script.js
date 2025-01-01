@@ -9,13 +9,13 @@ function switchTab(event, activeTab, activeContent, inactiveContent) {
   // Deactivate all tabs and contents
   vehiclesTab.classList.remove('active');
   spoilersTab.classList.remove('active');
-  vehiclesContent.style.display = 'none';
-  spoilersContent.style.display = 'none';
+  vehiclesContent.classList.remove('active');
+  spoilersContent.classList.remove('active');
 
   // Activate the clicked tab and show the relevant content
   activeTab.classList.add('active');
-  activeContent.style.display = 'block';
-  inactiveContent.style.display = 'none';
+  activeContent.classList.add('active');
+  inactiveContent.classList.remove('active');
 }
 
 // Add event listeners to the tabs
